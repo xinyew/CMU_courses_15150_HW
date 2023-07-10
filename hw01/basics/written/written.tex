@@ -85,31 +85,47 @@
 
 % Sample usage:
 
-% \code{fn x => x}
+\code{fn x => x}
 
-% \begin{codeblock}
-%     fun fact 0 = 1
-%       | fact n = n * fact (n - 1)
-% \end{codeblock}
+\begin{codeblock}
+    fun fact 0 = 1
+      | fact n = n * fact (n - 1)
+\end{codeblock}
 
-% \begin{align*}
-%     \code{(fn x => 2 * x) (3 + 4)}
-%       &\eeq \code{(fn x => 2 * x) 7} \tag{definition of \code{+}} \\
-%       &\eeq \code{2 * 7}             \tag{function application} \\
-%       &\eeq \code{14}                \tag{definition of \code{*}}
-% \end{align*}
+\begin{align*}
+    \code{(fn x => 2 * x) (3 + 4)}
+      &\eeq \code{(fn x => 2 * x) 7} \tag{definition of \code{+}} \\
+      &\eeq \code{2 * 7}             \tag{function application} \\
+      &\eeq \code{14}                \tag{definition of \code{*}}
+\end{align*}
+
+\begin{align*}
+    \code{(fn x => 2 * x) (3 + 4)}
+      &\eeq \code{(fn x => 2 * x) 7} \tag{definition of \code{+}} \\
+      &\eeq \code{2 * 7}             \tag{function application} \\
+      &\eeq \code{14}                \tag{definition of \code{*}}
+\end{align*}
+
 
 % \codefile[linerange=2-5]{path/to/file.sml}
 % \codefile{path/to/file.sml} includes the whole file
 
 \task{2.1}
 % TODO: Task 2.1
+\begin{codeblock}
+\end{codeblock}
 
 \task{2.2}
 % TODO: Task 2.2
+\begin{codeblock}
+    fun fact (0 : int) : int = 1
+      | fact (n : int) : int = n * fact (n - 1)
+\end{codeblock}
+We can see by our type annotations that this function has type \code{int -> int}!
 
 \task{2.3}
 % TODO: Task 2.3
+\code{fact : int -> int}
 
 \task{2.4}
 % TODO: Task 2.4
