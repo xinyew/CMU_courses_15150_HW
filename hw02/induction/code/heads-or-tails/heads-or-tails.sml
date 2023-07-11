@@ -4,7 +4,12 @@
  * are all equal to x
  *)
 fun heads (x : int, xs : int list) : int =
-  raise Fail "Unimplemented"
+  let
+    y, ys = 
+  in
+    body
+  end
+
 
 (* TEST CASES *)
 (* Uncomment to test *)
